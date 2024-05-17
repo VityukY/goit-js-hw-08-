@@ -12,3 +12,60 @@
    color: #212121;
    line-height: 1.5;
  }
+a {
+  text-decoration: none;
+}
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.task-list-item {
+  margin: 0;
+}
+
+.task-list-item a {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border: 2px solid #0056b3;
+  border-radius: 5px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.task-list-item a:hover {
+  background-color: #0056b3;
+  border-color: #003f7f;
+}
+.task-list-item a,
+p a {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border: 2px solid #0056b3;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.task-list-item a:hover,
+p a:hover {
+    background-color: #0056b3;
+    border-color: #003f7f;
+}
+
+p {
+    margin: 15px 0; /* Add margin to ensure spacing similar to the list items */
+}
