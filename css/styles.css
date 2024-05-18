@@ -1,0 +1,24 @@
+
+.gallery{
+   box-sizing: border-box;
+   padding: 24px 156px;
+   display: flex;
+   flex-wrap: wrap;
+   max-width: 1440px;
+   margin: 0 auto;
+   gap: 24px;
+}
+.gallery-item{
+   list-style: none;
+   max-width: 360px;
+   cursor: pointer;
+}
+.gallery-link {
+   display: block;
+   text-decoration: none;
+ }
+ .gallery-image {
+   width: 100%;
+   height: auto;
+   display: block;
+ }
