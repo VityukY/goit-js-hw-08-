@@ -89,12 +89,13 @@ galleryLink.innerHTML = galleryItemsCreator ();
 
 galleryLink.addEventListener('click', (e) => {
    e.preventDefault();
-   const fullImage = e.target.getAttribute('data-source')
+  if (e.target != e.currentTarget) {
+    const fullImage = e.target.getAttribute('data-source')
 
-   basicLightbox.create(`
-   <img width="600" height="400" src=${fullImage}>
-   `).show();
-
-}
+    basicLightbox.create(`
+    <img width="600" height="400" src=${fullImage}>
+    `).show();
+    }
+  }
 )
 
